@@ -1,0 +1,21 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "nephia2D-sozai.moc3",
+		"Textures": [
+			"nephia2D-sozai.1024/texture_00.png"
+		]
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		},
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": []
+		}
+	]
+}

@@ -9,6 +9,7 @@ public class EnemyCanon : MonoBehaviour
     [SerializeField] int shotInterval;
     [SerializeField] float range;
     [SerializeField] float shotSpeed;
+    int shotCount;
 
     Player _pl;
 
@@ -27,7 +28,7 @@ public class EnemyCanon : MonoBehaviour
 
         if (dis < range)
         {
-            if (shotInterval <= 0)
+            if (shotCount <= 0)
             {
                 GameObject bullet = Instantiate(preBullet, thisPos, transform.rotation);
                 Vector3 homing;
@@ -36,10 +37,10 @@ public class EnemyCanon : MonoBehaviour
                 Rigidbody2D bulRig = bullet.GetComponent<Rigidbody2D>();
                 bulRig.velocity = homing * shotSpeed;
 
-                shotInterval = 1000;
+                shotCount = shotInterval;
             }
         }
 
-        if (shotInterval > 0) { shotInterval--; }
+        if (shotCount > 0) { shotCount--; }
     }
 }

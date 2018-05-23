@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4687755724001020}
   - component: {fileID: 61206028582426078}
   - component: {fileID: 114134530745639702}
+  - component: {fileID: 114998289065464976}
   m_Layer: 0
   m_Name: DeathLine
   m_TagString: Untagged
@@ -82,3 +83,14 @@ MonoBehaviour:
     m_Bits: 7936
   damageVolume: 1000
   isSelfHarm: 0
+--- !u!114 &114998289065464976
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1678003425388640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c8b68c60245150498dbf51240f02c43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

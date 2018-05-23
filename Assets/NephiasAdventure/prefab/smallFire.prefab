@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 61319824031810648}
   - component: {fileID: 114545878024652758}
   - component: {fileID: 114224045124602492}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: smallFire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0522157c8735e0d42841bc7b43645ef2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pl: {fileID: 1783802781005716, guid: be415088dacb4084ab30b11c66dc3961, type: 2}
 --- !u!114 &114267762425699908
 MonoBehaviour:
   m_ObjectHideFlags: 1

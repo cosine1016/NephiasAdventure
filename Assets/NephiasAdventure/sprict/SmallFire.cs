@@ -4,17 +4,11 @@ using UnityEngine;
 
 public class SmallFire : MonoBehaviour {
 
-    Rigidbody2D thisRigidbody2D;
     Health thisHealth;
-    Vector3 homing;
-
-    Player _pl;
 
 	// Use this for initialization
 	void Start () {
         thisHealth = GetComponent<Health>();
-        thisRigidbody2D = GetComponent<Rigidbody2D>();
-        _pl = GameManager.Instance.pl;
 	}
 	
 	// Update is called once per frame
@@ -23,11 +17,6 @@ public class SmallFire : MonoBehaviour {
         {
             Destroy(gameObject);
         }
-
-        homing = _pl.transform.position - this.transform.position;
-        homing.Normalize();
-
-        thisRigidbody2D.velocity = homing * 3;
 
     }
 }

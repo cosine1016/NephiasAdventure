@@ -5,11 +5,9 @@ using UnityEngine;
 public class Lamp : MonoBehaviour {
 
     [SerializeField] GameObject preSmoke;
-    [SerializeField] GameObject preFire;
     [SerializeField] float speedX;
     [SerializeField] float speedY;
     int cloudInterval;
-    int fireInteral;
 
     Rigidbody2D thisRigidbody2D;
     Health thisHealth;
@@ -35,14 +33,6 @@ public class Lamp : MonoBehaviour {
             Instantiate(preSmoke, new Vector3(pos.x, pos.y + 0.5f, pos.z), transform.rotation);
             cloudInterval = 60;
         }
-        if(fireInteral <= 0)
-        {
-            Vector3 pos = transform.position;
-            Instantiate(preFire, new Vector3(pos.x, pos.y, pos.z), transform.rotation);
-            fireInteral = 1000;
-        }
-
-        fireInteral--;
         cloudInterval--;
 	}
 
